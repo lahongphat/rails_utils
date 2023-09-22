@@ -32,7 +32,7 @@ module RailsUtils
     end
 
     def javascript_initialization(options = {})
-      application_name  = Rails.application.class.parent_name
+      application_name  = Rails.application.class.module_parent_name
       js_namespace_name = page_controller_class_underscored
       js_function_name  = page_action_class
 
